@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    background-color: #cedbf6;
+    background-image: url(bg\ -\ Copy\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0px 0px;
+    margin: 0px  0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #eaeff6;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    z-index: 1000; /* Pastikan dropdown muncul di atas elemen lain */
+   }
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    padding: 10px 29px;
+    text-align: center;
+    display: block;
+    color: #658ed9; 
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+ul a:hover {
+    background-color: rgb(119, 135, 218);
+    color: white; /* Warna teks saat hover */
+}
+
+ul li ul.dropdown li{
+    display: block;
+    z-index: 1000; /* Pastikan dropdown muncul di atas elemen lain */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow biar lebih jelas */
+
+}
+
+ul li ul.dropdown {
+    background-color: #eaeff6;
+    position: absolute;
+    display: none;
+    width: 215px;
+    height: auto;
+    margin: 0;
+    font-size: 20px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.abstrak-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #658ed9 ; /* Warna biru */
+    margin-bottom: 10px;
+}
+
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Titles */
+h1, h2 {
+    color: #2c3e50;
+}
+
+.intro {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Navigation Buttons */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.nav button:hover {
+    background-color: #2980b9;
+}
+
+/* Sections */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+
+}
+
+/* Individual Photo */
+.photo {
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 5px;
+}
+
+/* Gaya untuk memastikan semua foto seragam */
+.photo img {
+    width: 100%;
+    height: 150px; /* Semua gambar dipaksa ke tinggi 150px */
+    object-fit: cover; /* Biar tidak gepeng dan tetap rapi */
+    border-radius: 8px;
+}
+
+.photo1 img {
+    width: 100%;
+    height: 150px; /* Semua gambar dipaksa ke tinggi 150px */
+    object-fit: cover; /* Biar tidak gepeng dan tetap rapi */
+    border-radius: 8px;
+}
+
+
+.photo:hover {
+    transform: scale(1.5);
+}
+
+/* LINK GOOGLE DOCS */
+.docs-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.docs-list li.dl {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.docs-list a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.docs-list a:hover {
+    color: #3c3fe7;
+    border-radius: 20px;
+}
+
+/* VIDEO CONTAINER */
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.video-container iframe {
+    width: 45%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    
+    .video-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+h2, h3 {
+    color: #333;
+}
+p {
+    color: #555;
+    font-size: 16px;
+}
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6b81;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #ff4757;
+    transform: scale(1.1);
+}
+.button:active {
+    background-color: #e84118;
+    transform: scale(1.05);
+}

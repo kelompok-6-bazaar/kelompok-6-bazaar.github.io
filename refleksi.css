@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    background-color: #cedbf6;
+    background-image: url(bg\ -\ Copy\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0px 0px;
+    margin: 0px  0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #eaeff6;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    z-index: 1000; /* Pastikan dropdown muncul di atas elemen lain */
+   }
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    padding: 10px 29px;
+    text-align: center;
+    display: block;
+    color: #658ed9; 
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+ul a:hover {
+    background-color: rgb(119, 135, 218);
+    color: white; /* Warna teks saat hover */
+}
+
+ul li ul.dropdown li{
+    display: block;
+    z-index: 1000; /* Pastikan dropdown muncul di atas elemen lain */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow biar lebih jelas */
+
+}
+
+ul li ul.dropdown {
+    background-color: #eaeff6;
+    position: absolute;
+    display: none;
+    width: 215px;
+    height: auto;
+    margin: 0;
+    font-size: 20px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.abstrak-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #658ed9;
+    margin-bottom: 10px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Titles */
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #27ae60;
+    margin-bottom: 8px;
+}
+
+/* Intro Text */
+.intro {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Box Sections */
+.box {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Lists */
+ol, ul.dv {
+    text-align: left;
+    padding-left: 20px;
+}
+
+li.bx {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Final Text */
+.final-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #e74c3c;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
