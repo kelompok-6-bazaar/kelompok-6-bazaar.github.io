@@ -74,7 +74,7 @@ ul li:hover ul.dropdown {
 
 .container {
     max-width: 800px;
-    margin: auto;
+    margin: 0px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
