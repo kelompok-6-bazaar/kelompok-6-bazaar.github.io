@@ -68,12 +68,13 @@ ul li:hover ul.dropdown {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    color: #658ed9;
+    color: #658ed9 ; /* Warna biru */
     margin-bottom: 10px;
 }
 
 /* Container */
 .container {
+    margin: 20px;
     width: 80%;
     margin: 20px auto;
     padding: 15px;
