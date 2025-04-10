@@ -74,9 +74,8 @@ ul li:hover ul.dropdown {
 
 /* Container */
 .container {
-    margin: 20px;
-    width: 80%;
     margin: 20px auto;
+    width: 80%;
     padding: 15px;
     background: white;
     border-radius: 8px;
@@ -87,29 +86,42 @@ h2, h3 {
     color: #2c3e50;
 }
 
+/* Blockquote untuk slogan */
 blockquote {
     font-style: italic;
     background: #e3f2fd;
-    padding: 10px;
+    padding: 10px 15px;
     border-left: 5px solid #2196F3;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 18px;
 }
 
+/* Section spacing */
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+/* List promo (WhatsApp & IG) */
 ul.de {
     list-style: none;
-    padding: 0;
-    font-size: 20px;
-    margin: 30px;
+    padding-left: 0;
+    margin: 20px 30px;
+    font-size: 18px;
 }
 
 ul.de li.ab {
-    background: #f1f1f1;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-left: 5px solid #658ed9;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+ul.de li.ab:hover {
+    background-color: #e2ebfa;
+    transform: scale(1.02);
 }
 
 /* Galeri Promosi */
@@ -137,7 +149,8 @@ ul.de li.ab {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.galeri-item img, .galeri-item video {
+.galeri-item img,
+.galeri-item video {
     width: 100%;
     border-radius: 5px;
 }
@@ -152,11 +165,12 @@ ul.de li.ab {
     grid-column: span 3;
 }
 
-/* Baris Coming Soon + 2 Video */
+/* Baris Coming Soon */
 .wide {
     grid-column: span 3;
 }
 
-p{
+/* Paragraf justify */
+p {
     text-align: justify;
 }
