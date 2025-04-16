@@ -129,6 +129,7 @@ p {
 .bullet-list li.bl {
     margin-bottom: 5px;
     font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Final Note */
