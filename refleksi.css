@@ -128,11 +128,12 @@ p {
 ol, ul.dv {
     text-align: left;
     padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li.bx {
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 19px;
 }
 
 /* Final Text */
