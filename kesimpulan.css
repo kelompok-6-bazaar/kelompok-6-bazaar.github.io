@@ -115,8 +115,9 @@ h3 {
 
 /* Paragraph & Lists */
 p {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.3;
+
 }
 
 ul.ds {
@@ -125,8 +126,9 @@ ul.ds {
 }
 
 li.sd {
-    margin-bottom: 8px;
-    font-size: 19px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Final Text */
